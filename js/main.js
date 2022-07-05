@@ -62,7 +62,7 @@ function displayData() {
   productsContainer.forEach((e, i) => {
     content += `
       <tr class="align-middle">
-        <td>${i}</td>
+        <td>${i + 1}</td>
         <td>${e.name}</td>
         <td>${e.price}</td>
         <td>${e.category}</td>
@@ -110,7 +110,7 @@ function searchProduct() {
     ) {
       content += `
       <tr class="align-middle">
-        <td>${i}</td>
+        <td>${i + 1}</td>
         <td>${el.name}</td>
         <td>${el.price}</td>
         <td>${el.category}</td>
