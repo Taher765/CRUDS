@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Add Product //////////////////// -->
+    <div class="w-75 mx-auto">
+      <div class="product-name">
+        <label for="product-name">Product Name :</label>
+        <input id="product-name" class="form-control mb-3" type="text" />
+      </div>
+      <div class="product-price">
+        <label for="product-price">Product Price :</label>
+        <input id="product-price" class="form-control mb-3" type="text" />
+      </div>
+      <div class="product-category">
+        <label for="product-category">Product category :</label>
+        <input id="product-category" class="form-control mb-3" type="text" />
+      </div>
+      <div class="product-desc">
+        <label for="product-desc">Product Desc :</label>
+        <input id="product-desc" class="form-control mb-3" type="text" />
+      </div>
+      <button class="btn btn-primary" id="addProduct">Add Product</button>
+    </div>
+    <!-- End Add Product //////////////////// -->
+    <div class="w-50 my-4 mx-auto">
+      <input
+        id="search"
+        placeholder="Search..."
+        class="form-control"
+        type="text"
+      />
+    </div>
+    <!-- Strat Display Product //////////////////// -->
+    <table class="table w-75 text-center mx-auto my-4">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Desc</th>
+          <th>Updet</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <!-- End Display Product //////////////////// -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

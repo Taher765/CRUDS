@@ -1,0 +1,8 @@
+* {
+  font-family: cursive;
+}
+
+::selection {
+  background-color: rgb(255 202 44);
+  color: #fff;
+}
