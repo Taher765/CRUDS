@@ -75,7 +75,6 @@ function displayData() {
         </td>
       </tr>
     `;
-    globaleIndex = i;
   });
   tableBody.innerHTML = content;
 }
@@ -91,12 +90,14 @@ function delProduct(index) {
 // update product
 function updateProduct(index) {
   console.log(index);
+  globaleIndex = index
   productName.value = productsContainer[index].name;
   productPrice.value = productsContainer[index].price;
   productCategory.value = productsContainer[index].category;
   productDese.value = productsContainer[index].desc;
   btnAddProduct.innerHTML = "Update Product";
   create = false;
+  console.log(index)
 }
 
 // Search Product
